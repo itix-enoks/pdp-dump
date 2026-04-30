@@ -106,7 +106,6 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 1
-  set_param bd.open.in_stealth_mode 1
   set_param runs.launchOptions { -jobs 1  }
   open_checkpoint riscv_wrapper_routed.dcp
   set_property webtalk.parent_dir /data2/home/cese4040-08/pdp-project-08/hardware/vivado/riscy/riscy.cache/wt [current_project]
